@@ -6,6 +6,19 @@
 <meta name="Descripcion" content="Editar y probar HTML. CSS y JavaScript" />
 </head>
 <body>
+  var gptAdSlots = [];
+googletag.cmd.push(function() {
+googletag.pubads().disableInitialLoad();               
+googletag.pubads().enableSingleRequest();
+  var leaderMapping = googletag.sizeMapping().
+  // Mobile ad
+  addSize([0, 0], [320, 50]). 
+  // Vertical Tablet ad
+  addSize([468, 0], [468, 60]). 
+  // Horizontal Tablet
+  addSize([728, 0], [728, 90]).
+  // Desktop and bigger ad
+  addSize([970, 0], [[728, 90], [970, 90]]).build();
 <script type="text/javascript">
                     window.___gcfg = {lang: 'es'};
 
